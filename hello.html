@@ -3,9 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>标题！</title>
+<script>
+    function displayData(){
+        document.getElementById("demo1").innerHTML=Date();
+        document.getElementById("demo2").innerHTML=Date();
+    }
+</script>
 </head>
 <body>
 <h1>标题1</h1>
-<p>段落1</p>
+<p id="demo1">段落1</p>
+<p id="demo2">段落2</p>
+
+<button type="button" onclick="displayData()">点击显示时间</button>
+
 </body>
 </html>
